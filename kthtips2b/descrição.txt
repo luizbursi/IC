@@ -1,0 +1,69 @@
+FOURIER
+
+MatlabExecutionError: 
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\fourier\fourier_radial.m, line 16, in fourier_radial
+
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\fourier\run.m, line 5, in run
+Index exceeds the number of array elements. Index must not exceed 32391.
+
+
+
+Index exceeds the number of array elements. Index must not exceed 32391.
+
+Error in fourier_radial (line 16)
+    assin = [assin, sum(IF(find(r_)))];   
+
+Error in run (line 5)
+feas = fourier_radial(I);
+
+
+=========================================================================================================================================
+
+GABOR 
+
+MatlabExecutionError: 
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\gabor\Fea_Gabor_brodatz.m, line 15, in Fea_Gabor_brodatz
+
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\gabor\gaborDescriptors.m, line 26, in gaborDescriptors
+
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\gabor\run.m, line 2, in run
+Arrays have incompatible sizes for this operation.
+
+
+
+Arrays have incompatible sizes for this operation.
+
+Error in Fea_Gabor_brodatz (line 15)
+        D = abs(ifft2(A.*GW(N*(s-1)+1:N*s,N*(n-1)+1:N*n)));
+
+Error in gaborDescriptors (line 26)
+F = Fea_Gabor_brodatz(img, GW, N, stage, orientation);
+
+Error in run (line 2)
+feas = gaborDescriptors(I);
+
+=============================================================================================================================================
+SFTA 
+
+
+MatlabExecutionError: 
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\sfta\otsurec.m, line 14, in otsurec
+
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\sfta\sfta.m, line 29, in sfta
+
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\sfta\run.m, line 5, in run
+Undefined function 'im2uint8' for input arguments of type 'uint8'.
+
+
+
+im2uint8 requires Image Processing Toolbox.
+
+Error in otsurec (line 14)
+    I = im2uint8(I(:));
+
+Error in sfta (line 29)
+    T = otsurec( I, nt );
+
+Error in run (line 5)
+[ feas ] = sfta(uint8(I), 4 );
+==================================================================================================================================================================

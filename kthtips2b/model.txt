@@ -1,0 +1,19 @@
+path_descriptors = "C:/Users/oluiz/OneDrive/Documentos/IC/Descritores/SLBP/"
+
+
+
+
+
+eng.addpath(path_descriptors)  #adequação do caminho da função no módulo de matlab
+feas_matrix = []  #array que vai receber as características extraídas
+for images in dirs_kthtips2b:  #laço que percorre as imagens dentro da base
+    img = cv2.imread(path_kthtips2b+ images)  #parte de processamento de imagens
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) #parte de processamento de imagens
+    img = matlab.double(img.tolist()) #aplicação da função que adequa a imagem pra função
+    feas = eng.run(img)    #aplicação da função que extrai as features da imagem
+    feas_matrix.append(feas) #faz um append na matriz, para ser uma matriz pelas n imagens por m features
+
+    #vai salvar no .pkl as features de todas as imagen
+data = {"descriptor": "SLBP", "features": feas_matrix }
+with open(path_pkl+"SLBP"+typefile_f, "wb" ) as f:
+    pickle.dump(data,f)

@@ -1,0 +1,49 @@
+Erro ao processar a imagem c01_001_a_w01.png com o descritor BSIF: 
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\BSIF\run.m, line 7, in run
+Unable to find file or directory './texturefilters/ICAtextureFilters_11x11_8bit'.
+
+
+
+Erro ao processar a imagem c01_001_a_w01.png com o descritor CLBP: 
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\CLBP\run.m, line 11, in run
+Undefined function 'hist3' for input arguments of type 'double'.
+
+
+
+Erro ao processar a imagem c01_001_a_w01.png com o descritor CNTD: 
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\CNTD\cn.m, line 6, in cn
+
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\CNTD\run.m, line 3, in run
+Undefined function 'bwdist' for input arguments of type 'double'.
+
+
+
+Erro ao processar a imagem c01_001_a_w01.png com o descritor glcm: 
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\glcm\haralickDescriptors.m, line 4, in haralickDescriptors
+
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\glcm\run.m, line 3, in run
+Undefined function 'graycomatrix' for input arguments of type 'uint8'.
+
+
+
+Erro ao processar a imagem c01_001_a_w01.png com o descritor GLDM: 
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\GLDM\GLDM.m, line 60, in GLDM
+
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\GLDM\run.m, line 7, in run
+Undefined function 'imhist' for input arguments of type 'uint8'.
+
+
+
+Erro ao processar a imagem c01_001_a_w01.png com o descritor ltp: 
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\ltp\run.m, line 3, in run
+Output argument "result" (and possibly others) not assigned a value in the execution with "ltp" function.
+
+
+
+Erro ao processar a imagem c01_001_a_w01.png com o descritor sfta: 
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\sfta\otsurec.m, line 14, in otsurec
+
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\sfta\sfta.m, line 29, in sfta
+
+  File C:\Users\oluiz\OneDrive\Documentos\IC\Descritores\sfta\run.m, line 5, in run
+Undefined function 'im2uint8' for input arguments of type 'uint8'.
